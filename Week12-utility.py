@@ -5,3 +5,12 @@
 
 def PrintOutput(string):
     print("OUTPUT", string)
+
+
+def LoadFile(filename):
+    file = open(filename)
+    output = file.read()
+    output = output.split("\n")
+    return output
+
+
