@@ -56,5 +56,11 @@ def Union(list1, list2):
         output.append(a)
     return output
 
-def
-print(Union(['Adam','Janet','liam'], [12,7,13,18]))
+def Intersection(list1, list2):
+    out = []
+    for a in list2:
+        if a in list1:
+            out.append(a)
+    return out
+
+print(Intersection(['Adam','Janet','liam',"Kai"], [12,7,"Adam","Kai"]))
