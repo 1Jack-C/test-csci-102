@@ -48,7 +48,13 @@ def ScoreFinder(players, scores, name):
         print("OUTPUT player not found")
 
 
+def Union(list1, list2):
+    output = []
+    for a in list1:
+        output.append(a)
+    for a in list2:
+        output.append(a)
+    return output
 
-
-
-ScoreFinder(['Adam', 'Janet', 'liam'], [12,7,13,18], 'janet')
+def
+print(Union(['Adam','Janet','liam'], [12,7,13,18]))
