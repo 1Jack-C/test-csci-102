@@ -32,6 +32,23 @@ def FindWordCount(list, word):
     return count
 
 
+def ScoreFinder(players, scores, name):
+    name = name.upper()
+    index = 0
+    newplayers = []
+    for player in players:
+        newplayers.append(player.upper())
+    if name in newplayers:
+        for a in newplayers:
+            if a == name:
+                newindex = index
+            index = index + 1
+        print("OUTPUT", players[newindex], "got a score of", scores[newindex])
+    else:
+        print("OUTPUT player not found")
 
-a = LoadFile("test.txt")
-PrintOutput(str(FindWordCount(a, 'adam')))
+
+
+
+
+ScoreFinder(['Adam', 'Janet', 'liam'], [12,7,13,18], 'janet')
