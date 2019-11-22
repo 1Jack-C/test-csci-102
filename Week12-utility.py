@@ -1,3 +1,4 @@
+
 #Jack Chapman
 #CSCI 102 sec C
 #Week 12 Utility
@@ -63,4 +64,10 @@ def Intersection(list1, list2):
             out.append(a)
     return out
 
-print(Intersection(['Adam','Janet','liam',"Kai"], [12,7,"Adam","Kai"]))
+
+def NotIn(list1, list2):
+    out = []
+    for a in list1:
+        if a not in list2:
+            out.append(a)
+    return out
